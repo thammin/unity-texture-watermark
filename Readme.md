@@ -1,6 +1,6 @@
 # Unity texture watermark with DWT & DCT
 
-<img src="./Documentation/Demo.png" width="300">
+<img src="./Documentation/Demo.png" width="800">
 
 An experiment to embed watermark to texture with DWT (Discrete wavelet transform) and DCT (Discrete cosine transform).
 
@@ -12,7 +12,7 @@ Mainly based on the algorithmn from these repositories.
 
 # Jpeg Attack
 
-<img src="./Documentation/JpegAttack.png" width="300">
+<img src="./Documentation/JpegAttack.png" width="800">
 
 # License
 
