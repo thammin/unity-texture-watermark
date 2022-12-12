@@ -24,6 +24,9 @@ public class Watermark : MonoBehaviour
     public RawImage embedWatermark;
     public RawImage recoveredWatermark;
 
+    public bool isJpegAttack;
+    public int jpegQuality = 75;
+
     void Start()
     {
         if (IsEmbedable() == false) return;
@@ -171,6 +174,13 @@ public class Watermark : MonoBehaviour
         outputTexture.SetPixels(pixels);
         outputTexture.Apply();
         outputImage.texture = outputTexture;
+
+        if (isJpegAttack)
+        {
+            var imageBytes = outputTexture.EncodeToJPG(jpegQuality);
+            outputTexture.LoadImage(imageBytes);
+            outputTexture.Apply();
+        }
     }
 
     private Color[] RetrieveWatermark(Texture2D texture)

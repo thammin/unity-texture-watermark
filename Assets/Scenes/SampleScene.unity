@@ -157,6 +157,8 @@ MonoBehaviour:
   watermark: {fileID: 1214328087}
   embedWatermark: {fileID: 1274058518}
   recoveredWatermark: {fileID: 843298820}
+  isJpegAttack: 1
+  jpegQuality: 30
 --- !u!4 &250679370
 Transform:
   m_ObjectHideFlags: 0
